@@ -1,0 +1,87 @@
+{% extends "blog/base.html" %}
+
+{% load static %}
+
+{% block extra_head %}
+<link href="{% static 'blog/css/index.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+{% block content %}
+ 
+ 
+
+ <div class="back1">
+
+    <div class="back1-text">
+        <h1>Bootstrap 4 Blog - A free <span>Template by Bootstrap Temple</span> </h1>
+    </div>
+    <div class='button1'>
+        <h1><a href="{% url 'index' %}">DISCOVER MORE</a></h1>
+    </div>
+    <div class="scrol1">
+        <div id='section1'>
+        Scroll Down<i class='bx bxs-chevrons-down'></i>
+        </div>
+    </div>
+</div>
+<br><br>
+     
+
+<div class="cards">
+<div class="card">
+    <a href="{% url 'index' %}"></a>
+        <img src="{% static 'blog/img/blog-2.jpg' %}" alt='img'>
+    </a>
+     
+            
+    
+    <span class='sub-image'>20 May | 2016</span>
+    <span class='sub-image2'>BUSINESS</span>
+    <br><br>
+    <a href="{% url 'index' %}">Wwwwssdsfdfays to remember your important ideas</a>
+    <br><br>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        <p>jnkdsfn</p>
+    
+
+
+</div>
+<div class="card">
+    <a href="{% url 'index' %}">
+        <img src="{% static 'blog/img/blog-2.jpg' %}" alt='img'>
+    </a>
+     
+            
+    
+    <span class='sub-image'>20 May | 2016</span>
+    <span class='sub-image2'>BUSINESS</span>
+    <br><br>
+    <a href="{% url 'index' %}">Wwwwssdsfdfays to remember your important ideas</a>
+    <br><br>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        <p>jnkdsfn</p>
+    
+
+
+</div>
+<div class="card">
+    <a href="{% url 'index' %}">
+        <img src="{% static 'blog/img/blog-2.jpg' %}" alt='img'>
+    </a>
+     
+            
+    
+    <span class='sub-image'>20 May | 2016</span>
+    <span class='sub-image2'>BUSINESS</span>
+    <br><br>
+    <a href="{% url 'index' %}">Wwwwssdsfdfays to remember your important ideas</a>
+    <br><br>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        <p>jnkdsfn</p>
+    
+
+
+</div>
+</div>
+ 
+
+{% endblock %}

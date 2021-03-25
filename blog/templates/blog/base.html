@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'blog/css/base.css' %}" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>hi</title>
+    {% block extra_head %}
+    {% endblock %}
+</head>
+<body>
+    <nav class="navbar">
+        <a href="{% url 'index' %}" class="navbar-brand"><span>W</span>eb<span>D</span>ev</a>
+
+        <ul>
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+          <li><a href="{% url 'post' %}">Post</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+          <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+              <form action="">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+          <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+        
+        <button class="navbar-toggler">
+          <span></span>
+        </button>
+    </ul>
+      </nav>
+    
+
+   
+
+  {% block content %}
+  {% endblock %}
+
+  <script src="{% static 'blog/js/main.js' %}"></script>
+</body>
+</html>
